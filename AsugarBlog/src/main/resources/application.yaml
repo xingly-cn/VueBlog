@@ -1,0 +1,20 @@
+
+server:
+  # 端口8080
+  port: 8081
+
+spring:
+  #thymeleaf
+  thymeleaf:
+    # 关闭模板引擎缓存
+    cache: false
+
+  # 数据库连接配置
+  datasource:
+    url: jdbc:mysql://47.117.224.120:3306/vueblog?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useInformationSchema=true
+    username: root
+    password: XNXxnx520@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
